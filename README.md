@@ -1,4 +1,14 @@
-# React-shop-cloudfront
+# Air Store
+
+## Manual daploy
+
+S3: http://shpileuski-frontend-manual-deploy.s3-website-eu-west-1.amazonaws.com/  
+Cloud Front: https://d29l94wh8g1vbn.cloudfront.net/
+
+## Automated deploy
+
+S3: http://shpileuski-frontend-air-store.s3-website-eu-west-1.amazonaws.com/ (403 Forbidden)  
+Cloud Front : https://d3c5hfqlpim7sq.cloudfront.net/
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
 
