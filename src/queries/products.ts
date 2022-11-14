@@ -8,8 +8,15 @@ export function useAvailableProducts() {
   return useQuery<AvailableProduct[], AxiosError>(
     "available-products",
     async () => {
+      const authorizationToken = localStorage.getItem("authorization_token");
+
       const res = await axios.get<AvailableProduct[]>(
-        `${API_PATHS.bff}/products`
+        `${API_PATHS.bff}/products`,
+        {
+          headers: {
+            Authorization: `Basic ${authorizationToken}`,
+          },
+        }
       );
       return res.data;
     }
