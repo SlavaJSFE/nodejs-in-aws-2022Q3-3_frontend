@@ -4,6 +4,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import * as path from "path";
+import { number } from "yup";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,5 +18,8 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: "./src/setupTests.ts",
+  },
+  server: {
+    port: 3200
   },
 });
